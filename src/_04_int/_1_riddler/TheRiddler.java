@@ -27,11 +27,22 @@ else {
 	
 }
 round += 1;
-JOptionPane.showMessageDialog(null, "Your score is " + score + ". Onto round " + round + ".");
+JOptionPane.showMessageDialog(null, "Your score is " + score + ". Onto round " + round + "!");
 
 String input2 = JOptionPane.showInputDialog(null, "What has an face and hands, but no legs or feet?");
 
-		
+if(input2.equalsIgnoreCase("clock") || input2.equalsIgnoreCase("a clock")) {
+
+JOptionPane.showMessageDialog(null, "Correct!");	
+score += 1;	
+}
+
+else {
+	JOptionPane.showMessageDialog(null, "Wrong! The correct answer is a clock!");
+	score -= 1;
+}
+round += 1;
+JOptionPane.showMessageDialog(null, "Your score is" + score + ". Onto round" + round + "!");
 		// 1. Make a variable to hold the score
 
 		// 3. Ask the user a riddle. Here are some ideas: bit.ly/some-riddles
