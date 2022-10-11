@@ -42,8 +42,30 @@ else {
 	score -= 1;
 }
 round += 1;
-JOptionPane.showMessageDialog(null, "Your score is" + score + ". Onto round" + round + "!");
+JOptionPane.showMessageDialog(null, "Your score is " + score + ". Onto round" + round + "!");
+
+String input3 = JOptionPane.showInputDialog(null, "What has an eye, but no mouth or nose?");
+
+if(input3.equalsIgnoreCase("needle") || input3.equalsIgnoreCase("a needle") || input3.equalsIgnoreCase("storm") || input3.equalsIgnoreCase("a storm")) {
+
+JOptionPane.showMessageDialog(null, "Correct!");
+
+score += 1;
+	
+}
+
+else {
+	JOptionPane.showMessageDialog(null, "Wrong! The correct answer is a needle. I also would have taken a storm.");
+	score -= 1;
+	
+}
+
+round += 1;
+
+JOptionPane.showMessageDialog(null, "Your final score is " + score + ". That concludes the game.");
+		
 		// 1. Make a variable to hold the score
+
 
 		// 3. Ask the user a riddle. Here are some ideas: bit.ly/some-riddles
 

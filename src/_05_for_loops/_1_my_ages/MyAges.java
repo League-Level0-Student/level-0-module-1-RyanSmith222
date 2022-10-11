@@ -2,7 +2,8 @@ package _05_for_loops._1_my_ages;
 
 public class MyAges {
 	public static void main(String[] args) {
-		
+	
+	
 		/** This program will use loops to print all the ages you have been alive, 
 		 * from zero up to your current age. **/
 
@@ -10,9 +11,20 @@ public class MyAges {
 		//        Start its value at zero.
 		
 		// Change the value of yourCurrentAge to match your age
-		int yourCurrentAge = 0;
-				
+		int age = 0;
+		int yourCurrentAge = 14;
+	
+while(age <= yourCurrentAge) {
+	System.out.println(age);
+	age +=1;
+}
 		
+for(age = 0; age <= yourCurrentAge; age += 1) {
+
+System.out.println(age);	
+	
+}
+
 		//  WHILE LOOP. Start a while loop to repeat while age <= yourCurrentAge
 				
 			//  Print the age variable
